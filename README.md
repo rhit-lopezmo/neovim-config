@@ -1,2 +1,2 @@
-# Manuel Lopez's Neovim Config
+# Neovim Config
 A repo for my Neovim configuration.
