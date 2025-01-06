@@ -10,5 +10,7 @@ vim.cmd [[
     autocmd FileType html,css,scss setlocal tabstop=4 shiftwidth=4 softtabstop=4
 		" For JSON files
 		autocmd FileType json setlocal tabstop=4 shiftwidth=4 softtabstop=4
-  augroup END
+		" For Verilog files
+		autocmd FileType verilog setlocal tabstop=4 shiftwidth=4 softtabstop=4
+	augroup END
 ]]
