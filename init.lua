@@ -7,7 +7,7 @@ require("two-x")
 vim.opt.number = true
 
 -- Enable relative line numbers (optional)
--- vim.opt.relativenumber = true
+vim.opt.relativenumber = true
 
 -- Set smart indent
 vim.opt.smartindent = true

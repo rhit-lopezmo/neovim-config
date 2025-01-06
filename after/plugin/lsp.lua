@@ -32,11 +32,25 @@ vim.api.nvim_create_autocmd('LspAttach', {
 })
 
 -- Load langauge servers in here
-require('lspconfig').ts_ls.setup({})
+-- TypeScript/JavaScript language server
+require('lspconfig').ts_ls.setup({
+  filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact", "html" },
+})
 require('lspconfig').pylsp.setup({})
+--require('lspconfig').lua_ls_setup({})
+require('lspconfig').html.setup({
+	init_options = {
+		embeddedLanguages = {
+      javascript = true,
+      typescript = true,
+    },
+	}
+})
+require('lspconfig').cssls.setup({})
+require('lspconfig').css_variables.setup({})
 require('lspconfig').emmet_ls.setup({
 	capabilities = lspconfig_defaults.capabilities,
-	filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "svelte", "pug", "typescriptreact", "vue" },
+	filetypes = { "eruby", "html", "javascript", "javascriptreact", "less", "svelte", "pug", "typescriptreact", "vue" },
 	init_options = {
 		html = {
 			options = {
