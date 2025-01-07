@@ -8,4 +8,3 @@ end, { desc = 'Telescope search project' })
 vim.keymap.set('n', '<leader>fs', builtin.lsp_document_symbols, { desc = 'Telescope find function symbols in file' })
 vim.keymap.set('n', '<leader>fw', builtin.lsp_workspace_symbols, { desc = 'Telescope find function symbols in workspace' })
 vim.keymap.set('n', '<leader>gr', builtin.lsp_references, { desc = 'Telescope find references' })
-

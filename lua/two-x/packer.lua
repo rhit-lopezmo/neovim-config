@@ -30,4 +30,12 @@ return require('packer').startup(function(use)
 	use({'hrsh7th/cmp-nvim-lsp'})
 
 	use { 'tpope/vim-commentary' }
+
+	use {	"williamboman/mason.nvim", "williamboman/mason-lspconfig.nvim" }
+
+	use {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    requires = { {"nvim-lua/plenary.nvim"} }
+	}
 end)

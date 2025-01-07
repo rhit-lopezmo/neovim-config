@@ -79,6 +79,21 @@ _G.packer_plugins = {
     path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  harpoon = {
+    loaded = true,
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
+  },
+  ["mason-lspconfig.nvim"] = {
+    loaded = true,
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/nvim-cmp",
