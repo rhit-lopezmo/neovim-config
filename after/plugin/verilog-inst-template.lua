@@ -14,7 +14,7 @@ function verilog_inst(module_name, ...)
 
 	local output = args[#args]
 
-	template = template .. multi_arg_str("\t.%s(%s_sig) , // output %s_sig\n", output)
+	template = template .. multi_arg_str("\t.%s(%s_sig)   // output %s_sig\n", output)
 
 	template = template .. ");"
 
