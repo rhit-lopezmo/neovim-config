@@ -1,20 +1,16 @@
-local function multi_arg_str(template, arg)
-	return template:gsub("%%s", arg)
-end
-
-function verilog_inst(module_name, ...)
+function verilog_inst(module_name, inst_name, ...)
 	local args = {...}
 
-	local template = multi_arg_str("%s %s_inst\n(\n", module_name)
+	local template = string.format("%s %s\n(\n", module_name, inst_name)
 
 	for i = 1, #args - 1 do
 		local input = args[i]
-		template = template .. multi_arg_str("\t.%s(%s_sig) , // input %s_sig\n", input)
+		template = template .. string.format("\t.%s(),\n", input)
 	end
 
 	local output = args[#args]
 
-	template = template .. multi_arg_str("\t.%s(%s_sig)   // output %s_sig\n", output)
+	template = template .. string.format("\t.%s()\n", output, output)
 
 	template = template .. ");"
 
