@@ -35,3 +35,8 @@ vim.opt.incsearch = true
 
 vim.opt.scrolloff = 8
 
+vim.filetype.add({
+    extension = {
+        v = "verilog",
+    },
+})
