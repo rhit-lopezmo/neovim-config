@@ -79,7 +79,11 @@ require('lspconfig').clangd.setup({
     root_dir = require('lspconfig').util.root_pattern("compile_commands.json", "compile_flags.txt", ".git"),
 })
 
-require('lspconfig').hdl_checker.setup({})
+require('lspconfig').hdl_checker.setup({
+	cmd = { "hdl_checker", "--lsp" },
+	filetypes = { "verilog", "systemverilog", "vhdl" },
+	root_dir = require('lspconfig.util').root_pattern('.hdl_chcker.config'),
+})
 
 -- Autocompletion
 local cmp = require('cmp')

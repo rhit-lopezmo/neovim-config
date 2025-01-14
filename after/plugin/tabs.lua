@@ -12,5 +12,7 @@ vim.cmd [[
 		autocmd FileType json setlocal tabstop=4 shiftwidth=4 softtabstop=4
 		" For Verilog files
 		autocmd FileType verilog setlocal tabstop=4 shiftwidth=4 softtabstop=4
+		" For Assembly files
+		autocmd FileType asm setlocal tabstop=4 shiftwidth=4 softtabstop=4
 	augroup END
 ]]
