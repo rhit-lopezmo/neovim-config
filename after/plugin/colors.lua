@@ -15,6 +15,7 @@ function colors_update(color)
 	vim.api.nvim_set_hl(0, "@label", { fg = "#89ca78" })
 	vim.api.nvim_set_hl(0, "@variable.builtin.asm", { fg = "#F0F0F0" })  -- Set the variable color to grey
 	vim.api.nvim_set_hl(0, "@markup.heading", { fg = "#F0F0F0" })  -- Set the variable color to grey
+	-- vim.api.nvim_set_hl(0, "@tag.delimiter", { fg = "#E5E500" })
 end
 
 colors_update()

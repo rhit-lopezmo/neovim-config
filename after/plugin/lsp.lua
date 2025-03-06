@@ -61,7 +61,7 @@ require('lspconfig').cssls.setup({})
 require('lspconfig').css_variables.setup({})
 require('lspconfig').emmet_ls.setup({
 	capabilities = lspconfig_defaults.capabilities,
-	filetypes = { "eruby", "html", "javascript", "javascriptreact", "less", "svelte", "pug", "typescriptreact", "vue" },
+	filetypes = { "eruby", "html", "javascript", "javascriptreact", "less", "svelte", "pug", "typescriptreact" },
 	init_options = {
 		html = {
 			options = {
@@ -72,7 +72,10 @@ require('lspconfig').emmet_ls.setup({
 	}
 })
 require('lspconfig').gopls.setup({})
-
+require('lspconfig').volar.setup({
+  capabilities = lspconfig_defaults.capabilities,
+  filetypes = { "vue" }
+})
 require('lspconfig').clangd.setup({
     cmd = { "clangd" },
     filetypes = { "cpp", "objc", "objcpp" },
