@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-ipy"] = {
+    loaded = true,
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/nvim-ipy",
+    url = "https://github.com/bfredl/nvim-ipy"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -115,10 +120,25 @@ _G.packer_plugins = {
     path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/onedark",
     url = "https://github.com/olimorris/onedarkpro.nvim"
   },
+  ["open-browser.vim"] = {
+    loaded = true,
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/open-browser.vim",
+    url = "https://github.com/tyru/open-browser.vim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["plantuml-previewer.vim"] = {
+    loaded = true,
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/plantuml-previewer.vim",
+    url = "https://github.com/weirongxu/plantuml-previewer.vim"
+  },
+  ["plantuml-syntax"] = {
+    loaded = true,
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/plantuml-syntax",
+    url = "https://github.com/aklt/plantuml-syntax"
   },
   playground = {
     loaded = true,

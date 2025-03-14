@@ -38,4 +38,10 @@ return require('packer').startup(function(use)
     branch = "harpoon2",
     requires = { {"nvim-lua/plenary.nvim"} }
 	}
+
+	use { 'aklt/plantuml-syntax' }  -- Syntax highlighting
+	use { 'weirongxu/plantuml-previewer.vim', requires = { 'tyru/open-browser.vim' } }  -- Previewer
+
+	use 'bfredl/nvim-ipy'
+
 end)
