@@ -39,15 +39,31 @@ vim.api.nvim_create_autocmd('LspAttach', {
 require('lspconfig').ts_ls.setup({
   filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact", "html" },
 })
+require('lspconfig').rust_analyzer.setup({
+  settings = {
+    ["rust-analyzer"] = {
+      assist = {
+        importGranularity = "module",
+        importPrefix = "by_self",
+      },
+      cargo = {
+        loadOutDirsFromCheck = true,
+      },
+      procMacro = {
+        enable = true,
+      },
+    },
+  },
+})
 require('lspconfig').pylsp.setup({})
 require('lspconfig').lua_ls.setup({
-	settings = {
-		Lua = {
-			diagnostics = {
-				globals = { "vim" }
-			}
-		}
-	}
+  settings = {
+    Lua = {
+      diagnostics = {
+        globals = { 'vim' },
+			},
+    },
+  },
 })
 require('lspconfig').html.setup({
 	init_options = {

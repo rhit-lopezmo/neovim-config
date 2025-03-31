@@ -44,4 +44,6 @@ return require('packer').startup(function(use)
 
 	use 'bfredl/nvim-ipy'
 
+	use 'rust-lang/rust.vim'
+
 end)

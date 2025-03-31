@@ -5,9 +5,9 @@ vim.cmd [[
     " For Python files
     autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4
     " For JavaScript/TypeScript files
-    autocmd FileType javascript,typescript setlocal tabstop=4 shiftwidth=4 softtabstop=4
+    autocmd FileType javascript,typescript setlocal tabstop=2 shiftwidth=2 softtabstop=2
     " For HTML/CSS files
-    autocmd FileType html,css,scss setlocal tabstop=4 shiftwidth=4 softtabstop=4
+    autocmd FileType html,css,scss setlocal tabstop=2 shiftwidth=2 softtabstop=2
 		" For JSON files
 		autocmd FileType json setlocal tabstop=4 shiftwidth=4 softtabstop=4
 		" For Verilog files
