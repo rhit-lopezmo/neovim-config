@@ -14,11 +14,19 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
+	-- use {
+	-- 	'olimorris/onedarkpro.nvim',
+	-- 	as = 'onedark',
+	-- 	config = function()
+	-- 		vim.cmd('colorscheme onedark_vivid')
+	-- 	end
+	-- }
+
 	use {
-		'olimorris/onedarkpro.nvim',
-		as = 'onedark',
+		'catppuccin/nvim',
+		as = 'catppuccin',
 		config = function()
-			vim.cmd('colorscheme onedark_vivid')
+			vim.cmd('colorscheme catppuccin')
 		end
 	}
 
@@ -31,8 +39,6 @@ return require('packer').startup(function(use)
 
 	use { 'tpope/vim-commentary' }
 
-	use {	"williamboman/mason.nvim", "williamboman/mason-lspconfig.nvim" }
-
 	use {
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
@@ -41,9 +47,7 @@ return require('packer').startup(function(use)
 
 	use { 'aklt/plantuml-syntax' }  -- Syntax highlighting
 	use { 'weirongxu/plantuml-previewer.vim', requires = { 'tyru/open-browser.vim' } }  -- Previewer
+	use { 'tmux-plugins/vim-tmux-focus-events' }
 
-	use 'bfredl/nvim-ipy'
-
-	use 'rust-lang/rust.vim'
-
+--	use { 'preservim/nerdtree' }
 end)

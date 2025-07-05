@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/lopezmo/.cache/nvim/packer_hererocks/2.1.1713484068/share/lua/5.1/?.lua;/home/lopezmo/.cache/nvim/packer_hererocks/2.1.1713484068/share/lua/5.1/?/init.lua;/home/lopezmo/.cache/nvim/packer_hererocks/2.1.1713484068/lib/luarocks/rocks-5.1/?.lua;/home/lopezmo/.cache/nvim/packer_hererocks/2.1.1713484068/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/lopezmo/.cache/nvim/packer_hererocks/2.1.1713484068/lib/lua/5.1/?.so"
+local package_path_str = "/Users/i766052/.cache/nvim/packer_hererocks/2.1.1748459687/share/lua/5.1/?.lua;/Users/i766052/.cache/nvim/packer_hererocks/2.1.1748459687/share/lua/5.1/?/init.lua;/Users/i766052/.cache/nvim/packer_hererocks/2.1.1748459687/lib/luarocks/rocks-5.1/?.lua;/Users/i766052/.cache/nvim/packer_hererocks/2.1.1748459687/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/i766052/.cache/nvim/packer_hererocks/2.1.1748459687/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -74,104 +74,89 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  catppuccin = {
+    config = { "\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\0" },
+    loaded = true,
+    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   harpoon = {
     loaded = true,
-    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/harpoon",
+    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
-  },
-  ["mason-lspconfig.nvim"] = {
-    loaded = true,
-    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
-    url = "https://github.com/williamboman/mason-lspconfig.nvim"
-  },
-  ["mason.nvim"] = {
-    loaded = true,
-    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/mason.nvim",
-    url = "https://github.com/williamboman/mason.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-ipy"] = {
-    loaded = true,
-    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/nvim-ipy",
-    url = "https://github.com/bfredl/nvim-ipy"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
-  onedark = {
-    config = { "\27LJ\2\n=\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\30colorscheme onedark_vivid\bcmd\bvim\0" },
-    loaded = true,
-    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/onedark",
-    url = "https://github.com/olimorris/onedarkpro.nvim"
   },
   ["open-browser.vim"] = {
     loaded = true,
-    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/open-browser.vim",
+    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/open-browser.vim",
     url = "https://github.com/tyru/open-browser.vim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plantuml-previewer.vim"] = {
     loaded = true,
-    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/plantuml-previewer.vim",
+    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/plantuml-previewer.vim",
     url = "https://github.com/weirongxu/plantuml-previewer.vim"
   },
   ["plantuml-syntax"] = {
     loaded = true,
-    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/plantuml-syntax",
+    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/plantuml-syntax",
     url = "https://github.com/aklt/plantuml-syntax"
   },
   playground = {
     loaded = true,
-    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/playground",
+    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/playground",
     url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["rust.vim"] = {
-    loaded = true,
-    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/rust.vim",
-    url = "https://github.com/rust-lang/rust.vim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-commentary"] = {
     loaded = true,
-    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/vim-commentary",
+    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
+  },
+  ["vim-tmux-focus-events"] = {
+    loaded = true,
+    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/vim-tmux-focus-events",
+    url = "https://github.com/tmux-plugins/vim-tmux-focus-events"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: onedark
-time([[Config for onedark]], true)
-try_loadstring("\27LJ\2\n=\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\30colorscheme onedark_vivid\bcmd\bvim\0", "config", "onedark")
-time([[Config for onedark]], false)
+-- Config for: catppuccin
+time([[Config for catppuccin]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\0", "config", "catppuccin")
+time([[Config for catppuccin]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

@@ -4,8 +4,10 @@ vim.cmd [[
     autocmd!
     " For Python files
     autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4
+    " For Go files
+    autocmd FileType go setlocal tabstop=4 shiftwidth=4 softtabstop=4
     " For JavaScript/TypeScript files
-    autocmd FileType javascript,typescript setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd FileType javascript,typescript setlocal tabstop=4 shiftwidth=4 softtabstop=4
     " For HTML/CSS files
     autocmd FileType html,css,scss setlocal tabstop=2 shiftwidth=2 softtabstop=2
 		" For JSON files

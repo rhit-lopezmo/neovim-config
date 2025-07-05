@@ -2,8 +2,8 @@
 -- This will avoid an annoying layout shift in the screen
 vim.opt.signcolumn = 'no'
 
-require("mason").setup()
-require("mason-lspconfig").setup()
+-- require("mason").setup()
+-- require("mason-lspconfig").setup()
 
 -- Add cmp_nvim_lsp capabilities settings to lspconfig
 -- This should be executed before you configure any language server
@@ -39,23 +39,23 @@ vim.api.nvim_create_autocmd('LspAttach', {
 require('lspconfig').ts_ls.setup({
   filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact", "html" },
 })
-require('lspconfig').rust_analyzer.setup({
-  settings = {
-    ["rust-analyzer"] = {
-      assist = {
-        importGranularity = "module",
-        importPrefix = "by_self",
-      },
-      cargo = {
-        loadOutDirsFromCheck = true,
-      },
-      procMacro = {
-        enable = true,
-      },
-    },
-  },
-})
-require('lspconfig').pylsp.setup({})
+-- require('lspconfig').rust_analyzer.setup({
+--   settings = {
+--     ["rust-analyzer"] = {
+--       assist = {
+--         importGranularity = "module",
+--         importPrefix = "by_self",
+--       },
+--       cargo = {
+--         loadOutDirsFromCheck = true,
+--       },
+--       procMacro = {
+--         enable = true,
+--       },
+--     },
+--   },
+-- })
+-- require('lspconfig').pylsp.setup({})
 require('lspconfig').lua_ls.setup({
   settings = {
     Lua = {
@@ -75,34 +75,34 @@ require('lspconfig').html.setup({
 })
 require('lspconfig').cssls.setup({})
 require('lspconfig').css_variables.setup({})
-require('lspconfig').emmet_ls.setup({
-	capabilities = lspconfig_defaults.capabilities,
-	filetypes = { "eruby", "html", "javascript", "javascriptreact", "less", "svelte", "pug", "typescriptreact" },
-	init_options = {
-		html = {
-			options = {
-				-- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
-				["bem.enabled"] = true,
-			},
-		},
-	}
-})
+-- require('lspconfig').emmet_ls.setup({
+-- 	capabilities = lspconfig_defaults.capabilities,
+-- 	filetypes = { "eruby", "html", "javascript", "javascriptreact", "less", "svelte", "pug", "typescriptreact" },
+-- 	init_options = {
+-- 		html = {
+-- 			options = {
+-- 				-- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
+-- 				["bem.enabled"] = true,
+-- 			},
+-- 		},
+-- 	}
+-- })
 require('lspconfig').gopls.setup({})
-require('lspconfig').volar.setup({
-  capabilities = lspconfig_defaults.capabilities,
-  filetypes = { "vue" }
-})
-require('lspconfig').clangd.setup({
-    cmd = { "clangd" },
-    filetypes = { "cpp", "objc", "objcpp" },
-    root_dir = require('lspconfig').util.root_pattern("compile_commands.json", "compile_flags.txt", ".git"),
-})
+-- require('lspconfig').volar.setup({
+--   capabilities = lspconfig_defaults.capabilities,
+--   filetypes = { "vue" }
+-- })
+-- require('lspconfig').clangd.setup({
+--     cmd = { "clangd" },
+--     filetypes = { "cpp", "objc", "objcpp" },
+--     root_dir = require('lspconfig').util.root_pattern("compile_commands.json", "compile_flags.txt", ".git"),
+-- })
 
-require('lspconfig').hdl_checker.setup({
-	cmd = { "hdl_checker", "--lsp" },
-	filetypes = { "verilog", "systemverilog", "vhdl" },
-	root_dir = require('lspconfig.util').root_pattern('.hdl_chcker.config'),
-})
+-- require('lspconfig').hdl_checker.setup({
+-- 	cmd = { "hdl_checker", "--lsp" },
+-- 	filetypes = { "verilog", "systemverilog", "vhdl" },
+-- 	root_dir = require('lspconfig.util').root_pattern('.hdl_chcker.config'),
+-- })
 
 -- Autocompletion
 local cmp = require('cmp')
