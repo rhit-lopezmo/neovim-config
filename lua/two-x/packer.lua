@@ -31,6 +31,7 @@ return require('packer').startup(function(use)
 	}
 
 	use { 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'} }
+	use { 'nvim-treesitter/nvim-treesitter-textobjects' }
 	use { 'nvim-treesitter/playground' }
 
 	use({'neovim/nvim-lspconfig'})
@@ -48,6 +49,11 @@ return require('packer').startup(function(use)
 	use { 'aklt/plantuml-syntax' }  -- Syntax highlighting
 	use { 'weirongxu/plantuml-previewer.vim', requires = { 'tyru/open-browser.vim' } }  -- Previewer
 	use { 'tmux-plugins/vim-tmux-focus-events' }
+
+	use { 'mfussenegger/nvim-dap' }
+	use { 'leoluz/nvim-dap-go' }
+	use { 'nvim-neotest/nvim-nio' }
+	use { 'rcarriga/nvim-dap-ui' }
 
 --	use { 'preservim/nerdtree' }
 end)
