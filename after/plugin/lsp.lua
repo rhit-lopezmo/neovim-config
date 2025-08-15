@@ -87,7 +87,22 @@ require('lspconfig').css_variables.setup({})
 -- 		},
 -- 	}
 -- })
-require('lspconfig').gopls.setup({})
+require('lspconfig').gopls.setup({
+ settings = {
+    gopls = {
+      semanticTokens = true,   -- should be true by default, force it on
+    },
+  },
+  on_attach = function(client, bufnr)
+    if client.server_capabilities.semanticTokensProvider then
+      vim.lsp.semantic_tokens.start(bufnr, client.id)
+    end
+  end,
+})
+if vim.highlight and vim.highlight.priorities then
+  vim.highlight.priorities.semantic_tokens = 250
+  vim.highlight.priorities.treesitter      = 150
+end
 -- require('lspconfig').volar.setup({
 --   capabilities = lspconfig_defaults.capabilities,
 --   filetypes = { "vue" }
