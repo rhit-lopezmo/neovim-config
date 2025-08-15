@@ -52,3 +52,8 @@ colors_use_terminal_bg("catppuccin")
 -- or keep floats opaque while the main window uses the terminal bg:
 -- colors_use_terminal_bg("catppuccin", { floats = false })
 
+vim.diagnostic.config({ float = { border = "rounded" } })
+vim.lsp.handlers["textDocument/hover"] =
+  vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" })
+vim.lsp.handlers["textDocument/signatureHelp"] =
+  vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" })
