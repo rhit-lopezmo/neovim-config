@@ -26,22 +26,22 @@ return require('packer').startup(function(use)
 		'catppuccin/nvim',
 		as = 'catppuccin',
 		config = function()
-			require("catppuccin").setup({
-				 styles = {
-        comments = {},     -- no italics
-        conditionals = {},
-        loops = {},
-        functions = {},
-        keywords = {},
-        strings = {},
-        variables = {},
-        numbers = {},
-        booleans = {},
-        properties = {},
-        types = {},
-        operators = {},
-      }
-    })
+			-- require("catppuccin").setup({
+			-- 	 styles = {
+        -- comments = {},     -- no italics
+        -- conditionals = {},
+        -- loops = {},
+        -- functions = {},
+        -- keywords = {},
+        -- strings = {},
+        -- variables = {},
+        -- numbers = {},
+        -- booleans = {},
+        -- properties = {},
+        -- types = {},
+        -- operators = {},
+      -- }
+    -- })
 			vim.cmd('colorscheme catppuccin')
 		end
 	}
