@@ -26,6 +26,22 @@ return require('packer').startup(function(use)
 		'catppuccin/nvim',
 		as = 'catppuccin',
 		config = function()
+			require("catppuccin").setup({
+				 styles = {
+        comments = {},     -- no italics
+        conditionals = {},
+        loops = {},
+        functions = {},
+        keywords = {},
+        strings = {},
+        variables = {},
+        numbers = {},
+        booleans = {},
+        properties = {},
+        types = {},
+        operators = {},
+      }
+    })
 			vim.cmd('colorscheme catppuccin')
 		end
 	}
@@ -49,11 +65,6 @@ return require('packer').startup(function(use)
 	use { 'aklt/plantuml-syntax' }  -- Syntax highlighting
 	use { 'weirongxu/plantuml-previewer.vim', requires = { 'tyru/open-browser.vim' } }  -- Previewer
 	use { 'tmux-plugins/vim-tmux-focus-events' }
-
-	use { 'mfussenegger/nvim-dap' }
-	use { 'leoluz/nvim-dap-go' }
-	use { 'nvim-neotest/nvim-nio' }
-	use { 'rcarriga/nvim-dap-ui' }
 
 --	use { 'preservim/nerdtree' }
 end)

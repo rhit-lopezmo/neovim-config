@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/i766052/.cache/nvim/packer_hererocks/2.1.1748459687/share/lua/5.1/?.lua;/Users/i766052/.cache/nvim/packer_hererocks/2.1.1748459687/share/lua/5.1/?/init.lua;/Users/i766052/.cache/nvim/packer_hererocks/2.1.1748459687/lib/luarocks/rocks-5.1/?.lua;/Users/i766052/.cache/nvim/packer_hererocks/2.1.1748459687/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/i766052/.cache/nvim/packer_hererocks/2.1.1748459687/lib/lua/5.1/?.so"
+local package_path_str = "/home/lopezmo/.cache/nvim/packer_hererocks/2.1.1713484068/share/lua/5.1/?.lua;/home/lopezmo/.cache/nvim/packer_hererocks/2.1.1713484068/share/lua/5.1/?/init.lua;/home/lopezmo/.cache/nvim/packer_hererocks/2.1.1713484068/lib/luarocks/rocks-5.1/?.lua;/home/lopezmo/.cache/nvim/packer_hererocks/2.1.1713484068/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/lopezmo/.cache/nvim/packer_hererocks/2.1.1713484068/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -75,104 +75,84 @@ time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   catppuccin = {
-    config = { "\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\0" },
+    config = { "\27LJ\2\nÎ\3\0\0\5\0\21\0%6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\16\0005\3\3\0004\4\0\0=\4\4\0034\4\0\0=\4\5\0034\4\0\0=\4\6\0034\4\0\0=\4\a\0034\4\0\0=\4\b\0034\4\0\0=\4\t\0034\4\0\0=\4\n\0034\4\0\0=\4\v\0034\4\0\0=\4\f\0034\4\0\0=\4\r\0034\4\0\0=\4\14\0034\4\0\0=\4\15\3=\3\17\2B\0\2\0016\0\18\0009\0\19\0'\2\20\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\vstyles\1\0\1\vstyles\0\14operators\ntypes\15properties\rbooleans\fnumbers\14variables\fstrings\rkeywords\14functions\nloops\17conditionals\rcomments\1\0\f\rcomments\0\17conditionals\0\nloops\0\14functions\0\rkeywords\0\fstrings\0\14variables\0\fnumbers\0\rbooleans\0\14operators\0\ntypes\0\15properties\0\nsetup\15catppuccin\frequire\0" },
     loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/catppuccin",
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   harpoon = {
     loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/harpoon",
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-dap"] = {
-    loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/nvim-dap",
-    url = "https://github.com/mfussenegger/nvim-dap"
-  },
-  ["nvim-dap-go"] = {
-    loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/nvim-dap-go",
-    url = "https://github.com/leoluz/nvim-dap-go"
-  },
-  ["nvim-dap-ui"] = {
-    loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
-    url = "https://github.com/rcarriga/nvim-dap-ui"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
-  },
-  ["nvim-nio"] = {
-    loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/nvim-nio",
-    url = "https://github.com/nvim-neotest/nvim-nio"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-treesitter-textobjects"] = {
     loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
   },
   ["open-browser.vim"] = {
     loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/open-browser.vim",
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/open-browser.vim",
     url = "https://github.com/tyru/open-browser.vim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plantuml-previewer.vim"] = {
     loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/plantuml-previewer.vim",
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/plantuml-previewer.vim",
     url = "https://github.com/weirongxu/plantuml-previewer.vim"
   },
   ["plantuml-syntax"] = {
     loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/plantuml-syntax",
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/plantuml-syntax",
     url = "https://github.com/aklt/plantuml-syntax"
   },
   playground = {
     loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/playground",
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/playground",
     url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-commentary"] = {
     loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/vim-commentary",
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
   },
   ["vim-tmux-focus-events"] = {
     loaded = true,
-    path = "/Users/i766052/.local/share/nvim/site/pack/packer/start/vim-tmux-focus-events",
+    path = "/home/lopezmo/.local/share/nvim/site/pack/packer/start/vim-tmux-focus-events",
     url = "https://github.com/tmux-plugins/vim-tmux-focus-events"
   }
 }
@@ -180,7 +160,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: catppuccin
 time([[Config for catppuccin]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\0", "config", "catppuccin")
+try_loadstring("\27LJ\2\nÎ\3\0\0\5\0\21\0%6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\16\0005\3\3\0004\4\0\0=\4\4\0034\4\0\0=\4\5\0034\4\0\0=\4\6\0034\4\0\0=\4\a\0034\4\0\0=\4\b\0034\4\0\0=\4\t\0034\4\0\0=\4\n\0034\4\0\0=\4\v\0034\4\0\0=\4\f\0034\4\0\0=\4\r\0034\4\0\0=\4\14\0034\4\0\0=\4\15\3=\3\17\2B\0\2\0016\0\18\0009\0\19\0'\2\20\0B\0\2\1K\0\1\0\27colorscheme catppuccin\bcmd\bvim\vstyles\1\0\1\vstyles\0\14operators\ntypes\15properties\rbooleans\fnumbers\14variables\fstrings\rkeywords\14functions\nloops\17conditionals\rcomments\1\0\f\rcomments\0\17conditionals\0\nloops\0\14functions\0\rkeywords\0\fstrings\0\14variables\0\fnumbers\0\rbooleans\0\14operators\0\ntypes\0\15properties\0\nsetup\15catppuccin\frequire\0", "config", "catppuccin")
 time([[Config for catppuccin]], false)
 
 _G._packer.inside_compile = false
